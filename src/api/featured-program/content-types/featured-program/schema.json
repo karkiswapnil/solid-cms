@@ -1,0 +1,64 @@
+{
+  "kind": "singleType",
+  "collectionName": "featured_programs",
+  "info": {
+    "singularName": "featured-program",
+    "pluralName": "featured-programs",
+    "displayName": "FeaturedProgram"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "short_details": {
+      "type": "string"
+    },
+    "details": {
+      "type": "richtext"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaKeywords": {
+      "type": "string"
+    },
+    "metaDescripton": {
+      "type": "string"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
